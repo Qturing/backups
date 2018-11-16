@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CqlExample:jar2" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="780eef92-2cf5-4a12-8ca0-a598dabf43bf" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UserOperator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/UserOperator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1450">
+              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setConfig#0;class#UserOperator#0" />
+                <element signature="method#setEmitter#0;class#UserOperator#0" />
+                <element signature="method#initialize#0;class#UserOperator#0" />
+                <element signature="method#destroy#0;class#UserOperator#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankOperator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/BankOperator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+              <folding>
+                <element signature="method#setConfig#0;class#BankOperator#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterOperator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/ipfilter/FilterOperator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="925">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#HanldRuleContextThread#0;class#FilterOperator#0" />
+                <element signature="method#setConfig#0;class#FilterOperator#0" />
+                <element signature="method#filter#0;class#FilterOperator#0" />
+                <element signature="method#initProducer#0;class#FilterOperator#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhoneOperator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/PhoneOperator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1950">
+              <caret line="118" column="25" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#HanldRuleContextThread#0;class#PhoneOperator#0" />
+                <element signature="method#initProducer#0;class#PhoneOperator#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhoneFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/phonefilter/PhoneFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="875">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Operator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/Operator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1696">
+              <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1450#1466#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KafkaCSVOutput.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.output/KafkaCSVOutput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1700">
+              <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>createValues</find>
+      <find>createValue</find>
+      <find>_START</find>
+      <find>_</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\qxf\project\CqlExample</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/serde/ExampleSerde.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/udf/UDRTrim.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/udf/UDFTrim.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/serde/ExampleSerDe.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/UserOperator.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/IpOperator.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/ipfilter/IpTrans.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.output/FileOutput.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.input/FileInput.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.input/KafkaInput.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.input/KafkaSerDe.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.output/KafkaOutput.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.input/KafkaCSVInput.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/ipfilter/FilterOperator.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.output/KafkaCSVOutput.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/BankOperator.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/PhoneOperator.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/PhoneFilter.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/phonefilter/PhoneFilter.java" />
+        <option value="$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/Operator.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="51" />
+    <option name="y" value="19" />
+    <option name="width" value="1400" />
+    <option name="height" value="970" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CqlExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CqlExample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CqlExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CqlExample" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CqlExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CqlExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CqlExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CqlExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="streamcql.userdefined" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CqlExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CqlExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="streamcql.userdefined" type="462c0819:PsiDirectoryNode" />
+              <item name="datasource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CqlExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CqlExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="streamcql.userdefined" type="462c0819:PsiDirectoryNode" />
+              <item name="operator.input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CqlExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CqlExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="streamcql.userdefined" type="462c0819:PsiDirectoryNode" />
+              <item name="operator.output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CqlExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15339805" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="780eef92-2cf5-4a12-8ca0-a598dabf43bf" name="Default" comment="" />
+      <created>1539055054081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539055054081</updated>
+      <workItem from="1539055057436" duration="1223000" />
+      <workItem from="1539067850041" duration="3872000" />
+      <workItem from="1539071770632" duration="3269000" />
+      <workItem from="1539135942231" duration="10120000" />
+      <workItem from="1539592185552" duration="1209000" />
+      <workItem from="1539612999602" duration="2861000" />
+      <workItem from="1539735969986" duration="161000" />
+      <workItem from="1539736144107" duration="23573000" />
+      <workItem from="1540171065170" duration="13534000" />
+      <workItem from="1540254678460" duration="5840000" />
+      <workItem from="1540783688310" duration="625000" />
+      <workItem from="1541058379125" duration="33690000" />
+      <workItem from="1541510025231" duration="18878000" />
+      <workItem from="1541637735192" duration="14080000" />
+      <workItem from="1541747740633" duration="1363000" />
+      <workItem from="1541752932165" duration="7775000" />
+      <workItem from="1542005265028" duration="499000" />
+      <workItem from="1542012853273" duration="823000" />
+      <workItem from="1542014303929" duration="980000" />
+      <workItem from="1542018771139" duration="789000" />
+      <workItem from="1542070434442" duration="8528000" />
+      <workItem from="1542097249566" duration="2957000" />
+      <workItem from="1542159140362" duration="612000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="157261000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.3236994" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19559902" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="13" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/UserOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.input/KafkaCSVInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/udf/UDFTrim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.output/KafkaCSVOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3375">
+          <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/UserOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.output/KafkaCSVOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3375">
+          <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.input/KafkaCSVInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/udf/UDFTrim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/serde/ExampleSerDe.java" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/datatype/TimeZoneUtils.class" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/datatype/DecimalParser.class" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/datatype/DoubleParser.class" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/datatype/DateParser.class" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/datatype/StringParser.class" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/StreamingUtils.class" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/StreamingDataType.class" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/ReflectUtil.class" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/datatype/BooleanParser.class" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/GenericTokenParser.class" />
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/util/datatype/DataTypeParser.class" />
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/serde/ExampleSerDe.java" />
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/udf/UDFTrim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/event/TupleEvent.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Hashtable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="333" column="32" selection-start-line="333" selection-start-column="32" selection-end-line="333" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="2992" column="25" selection-start-line="2992" selection-start-column="25" selection-end-line="2992" selection-end-column="25" />
+          <folding>
+            <element signature="e#117893#117894#0" expanded="true" />
+            <element signature="e#117955#117956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="341" column="18" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../lib/streaming-base-2.0.jar!/com/huawei/streaming/operator/IEmitter.class" />
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/IpOperator.java" />
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/ipfilter/IpTrans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" selection-start-line="30" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/streaming-base-2.0.jar!/com/huawei/streaming/serde/StreamSerDe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/streaming-base-2.0.jar!/com/huawei/streaming/serde/CSVSerDe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/streaming-base-2.0.jar!/com/huawei/streaming/serde/BaseSerDe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.input/KafkaSerDe.java" />
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/streaming-base-2.0.jar!/com/huawei/streaming/operator/IOutputStreamOperator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/streaming-base-2.0.jar!/com/huawei/streaming/operator/outputstream/KafkaFunctionOp.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/streaming-base-2.0.jar!/com/huawei/streaming/operator/OutputOperator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/cql-2.0.jar!/com/huawei/streaming/api/streams/Schema.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/streaming-base-2.0.jar!/com/huawei/streaming/config/KafkaConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="854">
+          <caret line="462" column="11" selection-start-line="462" selection-start-column="11" selection-end-line="462" selection-end-column="11" />
+          <folding>
+            <element signature="e#15704#15705#0" expanded="true" />
+            <element signature="e#15770#15771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.input/KafkaCSVInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="110" column="36" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/streaming-base-2.0.jar!/com/huawei/streaming/util/datatype/FloatParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/slf4j-api-1.7.7.jar!/org/slf4j/LoggerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="206" column="25" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../conf&amp;lib/lib/streaming-base-2.0.jar!/com/huawei/streaming/config/StreamingConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/operator.output/KafkaCSVOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/UserOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setConfig#0;class#UserOperator#0" />
+            <element signature="method#setEmitter#0;class#UserOperator#0" />
+            <element signature="method#initialize#0;class#UserOperator#0" />
+            <element signature="method#destroy#0;class#UserOperator#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/phonefilter/PhoneFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/BankOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="method#setConfig#0;class#BankOperator#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/ipfilter/FilterOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#HanldRuleContextThread#0;class#FilterOperator#0" />
+            <element signature="method#setConfig#0;class#FilterOperator#0" />
+            <element signature="method#filter#0;class#FilterOperator#0" />
+            <element signature="method#initProducer#0;class#FilterOperator#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/PhoneOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="118" column="25" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#HanldRuleContextThread#0;class#PhoneOperator#0" />
+            <element signature="method#initProducer#0;class#PhoneOperator#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org.jn/streamcql.userdefined/datasource/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1696">
+          <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1450#1466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>CqlExample:jar2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>CqlExample</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

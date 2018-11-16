@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="log4j-1.2.15">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-1.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-api-2.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-to-slf4j-2.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/logback-classic-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/logback-core-1.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

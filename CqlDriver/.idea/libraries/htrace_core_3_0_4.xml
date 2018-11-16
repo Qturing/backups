@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="htrace-core-3.0.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/htrace-core-3.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/httpclient-4.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/httpcore-4.4.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

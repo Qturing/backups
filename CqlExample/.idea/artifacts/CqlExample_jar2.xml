@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="CqlExample:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/CqlExample_jar2</output-path>
+    <root id="root">
+      <element id="archive" name="CqlExample.jar">
+        <element id="module-output" name="CqlExample" />
+      </element>
+      <element id="library" level="project" name="lib" />
+    </root>
+  </artifact>
+</component>
