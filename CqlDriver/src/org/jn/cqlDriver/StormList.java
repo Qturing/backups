@@ -68,7 +68,7 @@ public class StormList {
 
 
     }
-/*
+
     public void HanldRuleContextThread() {
         System.out.println("start consumer");
         Thread contextThread = new Thread(new Runnable() {
@@ -78,10 +78,10 @@ public class StormList {
             public void run() {
                 try{
                     consumer.subscribe(Arrays.asList("_Throughout_"));
-                    while(!Thread.currentThread().isInterrupted()){
+                    while(true){
                         try {
                             //每次poll可拉取多个消息
-                            //System.out.println("poll is running");
+                            System.out.println("poll is running");
                             ConsumerRecords<String,String> records=consumer.poll(10000);
                             //System.out.println("isEmpty "+records.isEmpty());
                             //System.out.println("count" +records.count());
@@ -121,6 +121,5 @@ public class StormList {
         return props;
 
     }
-    */
 
 }

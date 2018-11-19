@@ -10,12 +10,14 @@ import com.huawei.streaming.operator.IFunctionStreamOperator;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.jn.streamcql.userdefined.datasource.phonefilter.PhoneFilter;
+import org.jn.streamcql.userdefined.datasource.stringFilter.StringFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.*;
 import java.nio.charset.Charset;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
+
 public class Operator implements IFunctionStreamOperator{
     private static final Logger LOG =LoggerFactory.getLogger(UserOperator.class);
     public static final Charset CHARSET =Charset.forName("UTF-8");
@@ -26,10 +28,11 @@ public class Operator implements IFunctionStreamOperator{
     private StreamingConfig config;
     private int outWordsCounter = 0 ;
     private int inWordsCounter = 0 ;
-    private PhoneFilter operator;
+    //private PhoneFilter operator;
+    private StringFilter stringOperator;
 
 
-    public void HanldRuleContextThread() {
+    private void HanldRuleContextThread() {
         Thread contextThread = new Thread(new Runnable() {
             KafkaProducer<String,String> producer = new KafkaProducer<String, String>(initProducer());
             @Override
@@ -71,6 +74,27 @@ public class Operator implements IFunctionStreamOperator{
 
     }
 
+    private static List<String> userRules(){
+        List<String> rules = new ArrayList<>();
+        String path = "/home/stream-cql-bianry-storm-2.0/bin/rule";
+        //String path = "D:\\qxf\\data\\rule_" + fileName;
+        try{
+            FileReader reader = new FileReader(path);
+            BufferedReader bf = new BufferedReader(reader);
+            String str = null;
+            while((str = bf.readLine()) != null){
+                rules.add(str);
+            }
+            bf.close();
+            reader.close();
+            return  rules;
+        }catch(Exception e){
+            e.printStackTrace();
+            return rules;
+        }
+    }
+
+
     @Override
     public void setConfig(StreamingConfig conf) throws StreamingException {
         if (!conf.containsKey(CONF_FILE_NAME))
@@ -97,9 +121,19 @@ public class Operator implements IFunctionStreamOperator{
 
     @Override
     public void initialize() throws StreamingException {
+        //启动子线程kafka producer,发送输入输出量
         HanldRuleContextThread();
-        operator = new PhoneFilter();
-        operator.setFileName("phone");
+        //创建PhoneFilter过滤器
+        //operator = new PhoneFilter();
+        //operator.setFileName("phone");
+
+        //创建StringFilter过滤器
+        stringOperator = new StringFilter();
+        stringOperator.setFileName("phone");
+        stringOperator.setRules(userRules());
+
+        //创建IPFilter过滤器
+
     }
 
 
@@ -110,8 +144,8 @@ public class Operator implements IFunctionStreamOperator{
 
     @Override
     public void execute(String streamName, TupleEvent event) throws StreamingException {
-        operator.filter(streamName,event,emitters);
-        inWordsCounter = PhoneFilter.getInWordsCounter();
-        outWordsCounter = PhoneFilter.getOutWordsCounter();
+        stringOperator.filter(streamName,event,emitters,stringOperator.getRules());
+        inWordsCounter = StringFilter.getInWordsCounter();
+        outWordsCounter = StringFilter.getOutWordsCounter();
     }
 }

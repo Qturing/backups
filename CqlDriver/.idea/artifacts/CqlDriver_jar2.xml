@@ -3,10 +3,18 @@
     <output-path>$PROJECT_DIR$/out/artifacts/CqlDriver_jar2</output-path>
     <root id="archive" name="CqlDriver.jar">
       <element id="module-output" name="CqlDriver" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/gplatform.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-1.2.15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-1.2.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-api-2.10.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-to-slf4j-2.10.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/logback-classic-1.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/logback-core-1.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/commons-logging-1.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/fastjson-1.2.3.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/htrace-core-3.0.4.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/httpclient-4.5.5.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/httpcore-4.4.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/gplatform.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../conf&amp;lib/lib/cql-2.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../conf&amp;lib/lib/ant-1.9.3.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../conf&amp;lib/lib/asm-5.0.3.jar" path-in-jar="/" />
@@ -44,14 +52,6 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/../../conf&amp;lib/lib/org.abego.treelayout.core-1.0.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/commons-logging-1.2.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../conf&amp;lib/stream-storm-2.0-jar-with-dependencies.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/commons-logging-1.1.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-1.2.15.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-1.2.17.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-api-2.10.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/log4j-to-slf4j-2.10.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/logback-classic-1.2.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/logback-core-1.2.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/fastjson-1.2.3.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
