@@ -1,13 +1,13 @@
 package org.jn.cqlDriver;
 
 
+import bean.ExecuteResult;
 import com.alibaba.fastjson.JSON;
-import com.scistor.bean.ExecuteResult;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
+
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

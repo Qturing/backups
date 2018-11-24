@@ -1,7 +1,12 @@
 package org.jn.cqlDriver;
 
 
-import com.scistor.bean.ExecuteResult;
+
+
+
+
+
+import bean.ExecuteResult;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -81,12 +86,12 @@ public class StormList {
                     while(true){
                         try {
                             //每次poll可拉取多个消息
-                            System.out.println("poll is running");
+                            //System.out.println("poll is running");
                             ConsumerRecords<String,String> records=consumer.poll(10000);
                             //System.out.println("isEmpty "+records.isEmpty());
                             //System.out.println("count" +records.count());
                             for(ConsumerRecord<String,String> record : records){
-                                System.out.printf("offset=%d,key=%s,value=%s\n",record.offset(),record.key(),record.value());
+                                //System.out.printf("offset=%d,key=%s,value=%s\n",record.offset(),record.key(),record.value());
                                 //System.out.println("taskId is " + taskId);
                                 if((taskId + "_indata").equals(record.key())){
                                     //System.out.println("indata:" + Integer.valueOf(record.value()));
@@ -117,7 +122,7 @@ public class StormList {
         props.put("bootstrap.servers",bootstrap_servers);
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
-        props.put("group.id","test-consumer-group");
+        props.put("group.id",executeResult.getTaskId());
         return props;
 
     }

@@ -1,15 +1,15 @@
 package org.jn.cqlDriver;
 
+import bean.HttpRequest;
 import com.alibaba.fastjson.JSON;
 import com.huawei.streaming.cql.exception.CQLException;
-import com.scistor.bean.ExecuteResult;
-import com.scistor.common.HttpRequest;
-import com.scistor.utils.ConfigurationManager;
+
 
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.FutureTask;
+
 
 public class testCqlDriver {
     public static void main(String[] args) throws IOException,CQLException,InterruptedException,ExecutionException {

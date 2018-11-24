@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="gplatform">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../work/classes/artifacts/gplatform_jar/gplatform.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

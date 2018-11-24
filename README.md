@@ -24,4 +24,10 @@ File python contains the code from s2 to s11 of the book "Python Crash Course".
 2.监控类StormList增加功能--启动子线程。子线程通过Consumer监控输入输出量
 #CqlExample
 1.自定义算子初始化时读取的规则文件地址修改为"/home/stream-cql-bianry-storm-2.0/bin/rule"
-
+---
+1124
+---
+1.Add Cql4IP
+2.Add Cql4String
+3.Add kafka_example
+3.Update python, CqlDriver

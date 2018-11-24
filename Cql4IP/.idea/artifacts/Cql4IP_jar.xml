@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="Cql4IP:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Cql4IP_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Cql4IP.jar">
+        <element id="module-output" name="Cql4IP" />
+      </element>
+      <element id="library" level="project" name="lib" />
+    </root>
+  </artifact>
+</component>

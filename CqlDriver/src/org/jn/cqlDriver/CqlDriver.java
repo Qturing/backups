@@ -1,10 +1,11 @@
 package org.jn.cqlDriver;
 
 
+import bean.ResultDto;
 import com.alibaba.fastjson.JSON;
 import com.huawei.streaming.cql.Driver;
 import com.huawei.streaming.cql.exception.CQLException;
-import com.scistor.bean.ResultDto;
+
 
 
 import java.io.FileOutputStream;
@@ -53,11 +54,21 @@ public class CqlDriver {
             PrintWriter cqlFile = new PrintWriter(os);
             Driver cqlDriver = new Driver();
             //ADD JAR
-            String strAddJar = "ADD JAR \"/home/stream-cql-bianry-storm-2.0/bin/CqlExample.jar\"";
+            String jarName = resultDto.getData().getTaskRules().get(0).getFiles().get(0).getFileName();
+            if(jarName.isEmpty()){
+                jarName = "CqlExample.jar";
+            }
+            String strAddJar = "ADD JAR \"/home/stream-cql-bianry-storm-2.0/bin/"+ jarName +"\"";
+            //String strAddJar = "ADD JAR \"/home/stream-cql-bianry-storm-2.0/bin/CqlExample.jar\"";
             cqlFile.write(strAddJar + ";\n");
             cqlDriver.run(strAddJar);
             //INPUT
-            String strSerdeSeperator = resultDto.getData().getTaskRules().get(0).getDataSources().get(0).getSeparatorTag();
+            String strSerdeSeperator = ",";
+            if(!resultDto.getData().getTaskRules().get(0).getDataSources().get(0).getSeparatorTag().isEmpty()){
+
+                strSerdeSeperator = resultDto.getData().getTaskRules().get(0).getDataSources().get(0).getSeparatorTag();
+            }
+
             String strSourceTopic = resultDto.getData().getTaskRules().get(0).getDataSources().get(0).getTopic();
             StringBuilder strProperties = new StringBuilder("(");
             int propertiesSize = resultDto.getData().getTaskRules().get(0).getDataSources().get(0).getDataSourceFields().size();
@@ -68,13 +79,14 @@ public class CqlDriver {
             strProperties.deleteCharAt(strProperties.length()-1);
             strProperties.append(")");
             //String strGroupId = resultDto.getData().getTaskRules().get(0).getDataSources().get(0).getGroupId();
+            String strGroupId = "cql_" + this.taskId;
             //String strInputZookeepers = resultDto.getData().getTaskRules().get(0).getDataSources().get(0).getConnectionUrl();
             String strInput = "CREATE INPUT STREAM s\n" +
                     strProperties.toString() + "\n" +
                     "SERDE simpleSerde\n" +
                     "PROPERTIES ( \"separator\" = \"" + strSerdeSeperator + "\" )\n" +
                     "SOURCE KafkaInput\n" +
-                    "PROPERTIES ( \"operator.kafka.groupid\"=\"test-consumer-group\"," +
+                    "PROPERTIES ( \"operator.kafka.groupid\"=\""+ strGroupId +"\"," +
                     "\"operator.kafka.topic\"=\"" + strSourceTopic + "\",\"operator.kafka.zookeepers\"=" +
                     "\"172.16.126.20:2181\")";
             cqlFile.write(strInput + ";\n");
@@ -101,7 +113,7 @@ public class CqlDriver {
             cqlFile.write(strOperator + ";\n");
             cqlDriver.run(strOperator);
             //INSERT
-            String strInsert = "INSERT INTO rs USING OPERATOR userOp FROM s";
+            String strInsert = "INSERT INTO rs USING OPERATOR userOp FROM s PARALLEL 2";
             cqlFile.write(strInsert +";\n");
             cqlDriver.run(strInsert);
             //SUBMIT
