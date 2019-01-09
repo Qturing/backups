@@ -13,6 +13,17 @@ def readinfo(date):
         print("Error: unable to fetch data!")
     return results
 
+def readtxt():
+    url = []
+    with open('D:\\qxf\\Temp\\news.csv','r') as f:
+        for line in f:
+            info = line.split(',')
+            url.append(info[1])
+    return url
+
+# for info in readtxt():
+#     print(info)
+
 # 测试函数
 # results = readinfo('2018-12-31')
 # for info in results:
