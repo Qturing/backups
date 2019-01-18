@@ -72,7 +72,7 @@ if __name__ == '__main__':
     if isLogin():
         print('login')
     else:
-        login('18537372504', 'KFqxf9201', get_captcha())
+        login('', '', get_captcha())
 
 
 # def get_captcha():
