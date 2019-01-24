@@ -9,6 +9,7 @@ import re
 from PIL import Image
 from time import sleep
 import os
+import json
 
 # 初始化
 def init():
@@ -20,9 +21,9 @@ def init():
     browser = webdriver.Chrome()
     browser.maximize_window()
     # 用户名
-    username = '8888'
+    username = '000'
     # 密码
-    password = '8888'
+    password = '000'
     # 设置等待超时
     wait = WebDriverWait(browser, 20)
 
@@ -169,7 +170,7 @@ def isLogin():
             if top == -1:
                 sleep(30)
                 init()
-                continue 
+                continue
             # block = Image.open('validate_block.jpg')
             # big = Image.open('validate_big.jpg')
             # distance = get_distance(top)
@@ -179,16 +180,23 @@ def isLogin():
             # # 移动滑块
             # move_to_gap(trace)
             sleep(5)
+    print("successfully login")
     return True
 
 # 上传文章
-def create_content():
+def create_content(path):
     create_url = 'https://mp.toutiao.com/profile_v3/graphic/publish'
     # 创建文章页面
     browser.get(create_url)
     # 填写标题
     sleep(3)
-    title = 'title_test'
+    try:
+        with open('D:\\qxf\\Temp\\'+ path +'\\content.json','r') as f:
+            js = json.load(f)
+    except:
+        print("no  such file")
+    title = js["title"].split("|")[0].split("_")[0]
+    # title = 'title_test'
     tlt = browser.find_element_by_id('title')
     tlt.send_keys(title)
     # 填写文章
@@ -197,26 +205,47 @@ def create_content():
     ActionChains(browser).click(upload_click).perform()
     sleep(1)
     upload_file = browser.find_element_by_name("file")
-    upload_file.send_keys(os.path.abspath(r"D:\\qxf\\Temp\\sinanews\\1\\content.docx"))
+    upload_file.send_keys(os.path.abspath("D:\\qxf\\Temp\\" + path +"\\content.docx"))
     # 设置选项
 
     sleep(1)
     article_cover = wait.until(EC.presence_of_element_located((By.CLASS_NAME,'article-cover'))).find_element_by_class_name("tui2-radio-group")
-    print(article_cover.text)
-    browser.execute_script('window.scrollTo(0, document.body.scrollHeight+500)')
+    # print(article_cover.text)
+    browser.execute_script('window.scrollTo(0, document.documentElement.scrollTop=1000000)')
     sleep(1)
     set_cover = article_cover.find_element_by_xpath("//label[3]").find_element_by_tag_name("input")
-    print(set_cover.text)
+    # print(set_cover.text)
     ActionChains(browser).move_to_element(set_cover).click().perform()
     # 提交文章
+    sleep(5)
     publish_click = wait.until(EC.presence_of_element_located((By.ID,'publish')))
     ActionChains(browser).click(publish_click).perform()
 
 # 程序入口
 if __name__ == '__main__':
     flag = isLogin()
+    path = "sinanews\\"
+    count = 0
     if flag:
-        create_content()
+        files = os.listdir("D:\\qxf\\Temp\\sinanews")
+        for element in files:
+            try:
+                create_content(path+element)
+            except:
+                alert = browser.switch_to.alert
+                alert.dismiss()
+                sleep(5)
+                publish_click = wait.until(EC.presence_of_element_located((By.ID,'publish')))
+                ActionChains(browser).click(publish_click).perform()
+                sleep(1)
+                # tlt = browser.find_element_by_id('title')
+                # tlt.clear()
+                # clear_article = browser.find_element_by_class_name("ql-editor")
+                # clear_article.clear()
+                continue
+            count = count + 1
+            print(count)
+            sleep(5)
 
 
 
